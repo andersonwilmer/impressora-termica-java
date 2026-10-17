@@ -90,8 +90,7 @@ public class Recibo {
             saida.write("1 x 70,00       70,00\n\n".getBytes("CP850"));
 
             saida.write(new byte[] {0x1B, 0x61, 0x01});
-            saida.write("________________________________________________\n\n\n"
-                            .getBytes("CP850"));
+            saida.write("________________________________________________\n\n\n".getBytes("CP850"));
 
             // Valores da venda
             saida.write(new byte[] {0x1B, 0x61, 0x00});
@@ -127,15 +126,13 @@ public class Recibo {
 
             saida.write("Recebi a(s) mercadoria(s) acima descrita(s), \n".getBytes("CP850"));
 
-            saida.write("concordando plenamente com os prazos e condições de garantia.\n\n\n\n"
-                            .getBytes("CP850"));
+            saida.write("concordando plenamente com os prazos e condições de garantia.\n\n\n\n".getBytes("CP850"));
 
             saida.write(".........................................\n".getBytes("CP850"));
 
             saida.write("ASSINATURA DO CLIENTE\n\n".getBytes("CP850"));
 
-            saida.write("________________________________________________\n\n"
-                            .getBytes("CP850"));
+            saida.write("________________________________________________\n\n".getBytes("CP850"));
 
             // Mensagem final
             saida.write(new byte[] {0x1B, 0x45, 0x01});
