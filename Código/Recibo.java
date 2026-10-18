@@ -98,7 +98,7 @@ public class Recibo {
 
             saida.write("Valor recebido R$                         400,00\n\n".getBytes("CP850"));
 
-            saida.write("Troco R$                                    80,00\n\n\n".getBytes("CP850"));
+            saida.write("Troco R$                                   80,00\n\n\n".getBytes("CP850"));
 
             // Forma de pagamento
             saida.write("FORMA DE PGTO.:".getBytes("CP850"));
